@@ -5,6 +5,13 @@
     <RootNamespace>dotnet_result</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Version>1.0.1</Version>
+    <PackageProjectUrl>https://github.com/TransientError/dotnet-result</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/TransientError/dotnet-result</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Authors>Kevin Wu</Authors>
+    <Description>A lightweight and type-safe result type for .NET.</Description>
+    <Summary>A lightweight and type-safe result type for .NET.</Summary>
   </PropertyGroup>
 
 </Project>
