@@ -12,6 +12,10 @@
     <Authors>Kevin Wu</Authors>
     <Description>A lightweight and type-safe result type for .NET.</Description>
     <Summary>A lightweight and type-safe result type for .NET.</Summary>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 </Project>
