@@ -102,11 +102,11 @@ public record Result<T, E>
             _ => throw new Exception("Unexpected result type")
         };
 
-    public Result<T, F> OrElse<F>(Func<Result<T, F>> f) =>
+    public Result<T, F> OrElse<F>(Func<E, Result<T, F>> f) =>
         this switch
         {
             Ok(var value) => new Result<T, F>.Ok(value),
-            Err(_) => f(),
+            Err(var err) => f(err),
             _ => throw new Exception("Unexpected result type")
         };
 
