@@ -27,6 +27,20 @@ public record Result<T, E>
     private Result() { }
 
     /// <summary>
+    /// Create a result from a successful result
+    /// </summary>
+    /// <param name="value"></param>
+    /// <returns></returns>
+    public static Result<T, E> Success(T value) => new Ok(value);
+
+    /// <summary>
+    /// Create a result from an error
+    /// </summary>
+    /// <param name="error"></param>
+    /// <returns></returns>
+    public static Result<T, E> Fail(E error) => new Err(error);
+
+    /// <summary>
     /// Applies a function to the value of a successful result, otherwise propagates the error.
     /// </summary>
     /// <param name="map">The function to apply</param>
